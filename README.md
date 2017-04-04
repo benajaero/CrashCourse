@@ -131,7 +131,23 @@ Next, statements.
 
 ### Statements
 
-A statement is a complete line of code executed by a computer.
+A statement is a complete line of code executed by a computer. A statement is one instruction.
+Some statements:
+
+``` javascript
+//statement 1
+var x = 3
+
+//statement 2
+getPhysical()
+
+//statement 3
+return x - 1
+
+//statement 4
+var g = getPhysical()
+
+```
 
 ### If you got to the end...
 
