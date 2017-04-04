@@ -35,6 +35,12 @@ Input is simply data that is given to the program. Input can take many forms suc
 
 ### Output
 
+Output is the processed, changed data of the program. The program processess the input, according to the instructions it is given and the outcome of the process is the output. 
+Output is simply data. Devices that utilize output as input(programs) are things such as:
+* LCD
+* Audio Speaker
+* File
+
 ### If you got to the end...
 
 You the real MVP
