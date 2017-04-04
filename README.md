@@ -149,6 +149,56 @@ var g = getPhysical()
 
 ```
 
+### Variables
+
+Variables allow us to store, reuse and change a specific value. 
+In most C-based language we can declare variables in this format:
+```
+int x = 2;
+```
+We have the name of the variable on the left side and value on the right side of the **assignment operator**
+
+We can change variables by using operators. Here are some operators.
+```
+* // Multiplication operator
++ // Addition and string concatenation operator
+- // Subtraction operator
+/ // Division operator
+
+= // Assignment operator. Makes the object on the left side equal to the object on the right side.
+== // Equality operator: Checks to see if both values are the same. If the same returns **true** if not the same returns **false**
+x == x || y == y // OR: operator: The **||** Checks if either one conditions or both conditions are equal to true then returns true or false
+x == x && y == y // AND: Checks if both conditions are equal to true
+!= // NOT operator Returns true if unequal returns false otherwise
+```
+
+Variables have type and scope. The types can be numbers, strings, boolean, enums, classes or structs. 
+Some types are the:
+```
+Int //integer
+Float // Floating point number
+Double // Bigger float
+Long // bigger Int
+String // collection of Char
+Char // Single character
+```
+You can also make your own types. Some languages are *dynamically-typed* which means you don't have to define a time. The type is inferred from the variable's value.
+
+Variables are stored in two places. Variables declared within functions are stored with the funcion in the stack part of the RAM. The variables can only be accessed with their parent function. They are known as local variables.
+
+Variables can also be stored in the heap. All global variables(variables outside every function) are stored in the heap. You can use the heap to dynamically allocate a variable. Here is a simple program that repeatdly creates and allocate a new variable in C++. You use pointers for this.
+
+``` c++
+for (int i = 1; i <= 10; i++) {
+	int *ptr = new int;
+	*ptr = i;
+	std::cout << *ptr;
+	delete ptr;
+}
+```
+This program prints the numbers from 1 to 10. 
+
+
 ### If you got to the end...
 
 You the real MVP
