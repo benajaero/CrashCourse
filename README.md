@@ -68,6 +68,39 @@ This is a complete computer program. Any algorithm can be replicated in a Turing
 
 A machine that can do all of the above is known as Turing Complete.
 
+## Reading the instructions
+
+The turing machine, like all computers, doesn't understand english. In fact it doesn't understand anything but 1 and 0. It is very stupid. But it is very good at doing menial repetitive tasks quickly and without errors. So how do we teach it?
+
+In the early days of computing people wrote their computer programs in binary. With just two numbers. Then some smart guys realised this wasn't sustainable or efficient and created a faster way of doing things.They invented...
+
+### Assembly
+
+Assembly was revolutionary. It allowed them to write programs in a more human-readable form and convert it to be read by the processor. They wrote code in assembly then ran it through an **assembler** that converted it into binary code.
+Assembly code:
+```
+	MOV R0, R7
+```
+
+It is still hard to read but is definitely better than:
+```
+0x0700A0E1
+```
+
+The main problem with Assembly, aside from its readability, is that it is platform-specific code. Assembly for one processor will not work on another processor. Even if they are made by the same company. This made it harder to easily share knowledge.
+The next innovation solved the problem.
+
+### Compiled languages
+
+Rather than writing in assembly people could now write in a human readable language. Compiled lanuages are not platform-specific. They compile down into the assembly code of whatever processor the system has then assemble into binary code
+
+With compiled languages we can do: 
+```
+int x = 10;
+```
+One line. 11 characters. Easy.
+
+
 
 ### If you got to the end...
 
