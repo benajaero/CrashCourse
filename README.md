@@ -426,7 +426,59 @@ do {
 while(x <= 6)
 ```
 Also very simple.
+
 ## Async
+
+It's now time to experience real life. After you read this you will realize how bad your code was before. 
+
+### Synchronous - Eww
+
+The code you first learn is synchronous. Have a look down below:
+```
+getCake()
+getDrink()
+```
+> *Great code, right?*
+No. This code is blocking. 
+> *Blocking? What's that?*
+Notice that when you run the getCake() function, you cannot execute anymore instructions until you are done getting the cake. That is synchronous code. You block the thread of execution. 
+
+The problem with synchronous code is that a lot of time being used is time doing nothing. Time waiting for responses. Lets say you had this code:
+```
+getPizza("pepperoni")
+doHomework()
+```
+To get the pizza you have to wait for pizzaman to order your call, then make the pizza and then bring it to your house. You aren't doing anything during that time.
+
+##Async again - Hooray! 
+Async is the crazy idea that, rather than waiting for the pizza before doing your homework, you do your homework while waiting for the pizza. This saves time, increasing speed. 
+
+To be Async you have to have give your functions a completion handler. What that means is that you have to give your functions a function to call when they have finished their jobs. The call this function to let you know their done. 
+
+This is equivalent to the pizza delivery guy clicking on your bell to let you know that the pizza is ready for you to collect. 
+
+Lets refactor our code to be async:
+```
+var callback = function() {
+	collectPizza()
+}
+getPizza("pepperoni", callback)
+doHomework()
+```
+This stops the pizza from blocking doHomework(). You'll need a system that supports async code for this to work such as node.js. You can even add error checking. 
+
+```
+getPizza("pepperoni", (error, pizza) => {
+	if (error) console.log(error)
+	else collectPizza(pizza)
+})
+doHomework()
+```
+
+
+
+
+
 
 ### If you got to the end...
 
