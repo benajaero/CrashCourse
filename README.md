@@ -203,13 +203,11 @@ for (int i = 1; i <= 10; i++) {
 ```
 This program prints the numbers from 1 to 10. 
 
-### Function
+### Functions
 
 There is a well-known rule in the programming world. 
 **Don't.Repeat.Yourself!**
 
-*But how can we do this? Won't we inevitably write the same instructions twice?*
-We can use functions! 
 
 Whenever you find that you've written the same code more than once, consider using a function instead.
 Functions are **blocks** of code that allow you to repeat the same code without typing it again and again. Functions decrease bugs and increase workflow and speed.
@@ -247,7 +245,7 @@ add(2,8);
 What happens when you call a function? The function is added onto the top of the stack as becomes the primary thing the processor is executing. When the function **returns** it gives control of the computer to the next object in the stack. Last on. First out.
 
 **Return**:
-Functions can, but don't have to, return values. A function is evaluated to return a single value. If it doesn't it returns null/void/nil. If it does return a value then the function in the expression will be evaluated as the return value.
+Functions can, but don't have to, return values. A function is evaluated to return a single value. If it doesn't have a non-void return type it returns null/void/nil. If it does return a value then the function in the expression will be evaluated as the return value.
 
 **First class functions**:
 Some languages have the ability to store functions as variables. This allows for callbacks and other fancy things.
@@ -257,8 +255,25 @@ var append = function(list, value) {
 	return list += value 
 }
 ```
+### Arrays
 
-## Controlflow
+Arrays are a way of grouping variables of the same type together. 
+You can declare them in javascript as below.
+
+``` javascript
+var arr = [1,2,2,3]
+
+//you can concatenate them as below
+arr += 6
+
+//find their length
+arr.length
+```
+
+They are pretty basic
+
+## Control flow
+
 
 ## If/else/elseif
 
