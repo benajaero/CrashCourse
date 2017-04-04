@@ -79,7 +79,7 @@ In the early days of computing people wrote their computer programs in binary. W
 Assembly was revolutionary. It allowed them to write programs in a more human-readable form and convert it to be read by the processor. They wrote code in assembly then ran it through an **assembler** that converted it into binary code.
 Assembly code:
 ```
-	MOV R0, R7
+MOV R0, R7
 ```
 
 It is still hard to read but is definitely better than:
@@ -100,7 +100,37 @@ int x = 10;
 ```
 One line. 11 characters. Easy.
 
+# Coding concepts
 
+# Expressions
+Expressions are the smallest piece of code that can be executed by a computer.
+They are pieces of code made up of variables, constants, literals and functions that evaluate into a single value.
+
+A simple expression is:
+```
+9 + 3
+```
+This evaluates to 12.
+
+You can add variables to expressions:
+```
+int x = 3;
+x + 4;
+```
+To solve this the computer finds the value of x and adds it to 4. It evaluates to seven.
+
+You can use functions (will explain) in expressions:
+``` C++
+int add(int x, int y) {
+	return x + y
+}
+add(2,5) * 5
+```
+The computer runs the add function first and receives the value 7. Then it multiples 7 by 5, evaluating the expression as 35.
+
+### Statements
+
+A statement is a complete line of code executed by a computer.
 
 ### If you got to the end...
 
