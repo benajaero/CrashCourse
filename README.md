@@ -127,6 +127,7 @@ int add(int x, int y) {
 add(2,5) * 5
 ```
 The computer runs the add function first and receives the value 7. Then it multiples 7 by 5, evaluating the expression as 35.
+Next, statements.
 
 ### Statements
 
