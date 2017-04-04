@@ -284,7 +284,7 @@ Control flow is the control of you programs execution through conditional progra
 
 The easiest way to execute code based on a set of conditions is using the If/else/elseif syntax. Lets begin. 
 
-We learnt about the conditional operators: ==, !=, &#01C0 &#01C0 and && (if you saw what I did there you are the real mvp). Now we will learn to use them. First some basics. 
+We learnt about the conditional operators: ==, !=, &#448; &#448; and && (if you saw what I did there you are the real mvp). Now we will learn to use them. First some basics. 
 
 ```
 x = 1 == 1
