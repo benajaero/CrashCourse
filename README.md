@@ -41,6 +41,15 @@ Output is simply data. Devices that utilize output as input(programs) are things
 * Audio Speaker
 * File
 
+# The root of everything
+You've now learnt about the architecture of computers. You know understand the components of a computer. Now we will go into the most important section of computing. If you can implement this then you can recreate every single computer program ever created.
+
+## Turing Machine
+
+The Turing machine was contrived by Alan Turing in 1936. It was described as an infinitely long tape with a head. The tape represented the idea of memory. It was composed of squares that could hold 3 values. 1, 0 and null. The head represented the processsor. It could read a tile, write to a tile and edit a tile. It could also follow instructions and perform conditional checking. 
+
+
+
 ### If you got to the end...
 
 You the real MVP
