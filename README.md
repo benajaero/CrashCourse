@@ -4,44 +4,29 @@ You can use the [editor on GitHub](https://github.com/Blaze349/CrashCourse/edit/
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-# Architexture
+# Architecture
 
-Computer programs are made up of:
+Computers are made up of:
 * Processor
-* Random Access Memory 
-* Long-Term Memory Storage (such as a HDD, Floppy Disk or USB)
-* Input/s
-* Output/s
+* Random Access Memory (RAM)
+* Input/s (microphone, HDD, keyboard, mouse, etc)
+* Output/s (screen, HDD, speaker, etc)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Processor
 
-```markdown
-Syntax highlighted code block
+The processor is the logical component component of a computer. It is responsible for completing instructions given to it by the programmer. It reads input, processes it according to its instructions and outputs the changed input.
 
-# Header 1
-## Header 2
-### Header 3
+The processor uses the RAM to store all of its temporary values, such as variables and constants.
 
-- Bulleted
-- List
+### RAM
 
-1. Numbered
-2. List
+RAM is responsible for storing all the data of programs that are running. It is made up of two parts, the stack and the heap.
 
-**Bold** and _Italic_ and `Code` text
+The stack is the part of the RAM responsible for thread execution. It manages the functions running (more about this later). The stack is controlled and allocated by the operating system of the computer.
 
-[Link](url) and ![Image](src)
-```
+The heap is the part of the RAM that is available for dynamic allocation. The heap allows you to create variables without explicitly specifying them in code. Your program can use the heap to create variables on the fly.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Blaze349/CrashCourse/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 ### If you got to the end...
 
