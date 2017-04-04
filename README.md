@@ -49,6 +49,7 @@ You've now learnt about the architecture of computers. You now understand the co
 The Turing machine was contrived by Alan Turing in 1936. It was described as an infinitely long tape with a head. The tape represented the idea of memory, RAM. It was composed of squares that could hold 3 values. 1, 0 and null. The head represented the processsor. It could read a tile, write to a tile and edit a tile. It could also follow instructions and perform conditional checking. 
 
 Here is a picture such a machine:
+
 ![Turing Machine](http://2009.igem.org/wiki/images/2/2d/Turing.jpg)
 
 An example program for a turing machine is:
@@ -58,6 +59,15 @@ if 1 write 0 move left
 if 0 write 1 move right
 Repeat
 ```
+This is a complete computer program. Any algorithm can be replicated in a Turing machine. To create your own Turing machine it must have:
+* A place to store memory
+* The ability to read from a memory address
+* The ability to write to a memory address
+* The ability to move memory addresses
+* The ability to do above methods according to specified instructions
+
+A machine that can do all of the above is known as Turing Complete.
+
 
 ### If you got to the end...
 
