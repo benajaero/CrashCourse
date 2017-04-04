@@ -166,10 +166,15 @@ We can change variables by using operators. Here are some operators.
 / // Division operator
 
 = // Assignment operator. Makes the object on the left side equal to the object on the right side.
-== // Equality operator: Checks to see if both values are the same. If the same returns **true** if not the same returns **false**
-x == x || y == y // OR: operator: The **||** Checks if either one conditions or both conditions are equal to true then returns true or false
+== // Equality operator: Checks to see if both values are the same. If the same returns 'true' if not the same returns 'false'
+x == x || y == y // OR: operator: The '||' Checks if either one conditions or both conditions are equal to true then returns true or false
 x == x && y == y // AND: Checks if both conditions are equal to true
 != // NOT operator Returns true if unequal returns false otherwise
+
+++ //increments variable by 1
++= //increments variable by value on right hand side
+-- //deincrements by 1
+-= //deincrements variable by value on right hand side
 ```
 
 Variables have type and scope. The types can be numbers, strings, boolean, enums, classes or structs. 
@@ -198,6 +203,72 @@ for (int i = 1; i <= 10; i++) {
 ```
 This program prints the numbers from 1 to 10. 
 
+### Function
+
+There is a well-known rule in the programming world. 
+**Don't.Repeat.Yourself!**
+
+*But how can we do this? Won't we inevitably write the same instructions twice?*
+We can use functions! 
+
+Whenever you find that you've written the same code more than once, consider using a function instead.
+Functions are **blocks** of code that allow you to repeat the same code without typing it again and again. Functions decrease bugs and increase workflow and speed.
+
+A function looks something like this (pseudocode): 
+```
+doSomething(parameters) {
+ //stuff...
+}
+
+// or as in the previous example
+
+func add(x,y) {
+	return x + y
+}
+```
+A function is made up of a function keyword, a name, a list of parameters/arguments, code inside. 
+The function keyword is what you use to declare the function. Some languages make the return type the function keyword but some languages use the **keywords** func, def or function.
+
+Parameters are placeholder values for the function to work with. In our example above, the function add has two parameters. X and Y. x and y can be any number. If you removed the parameters and returned a literal you would have to write a different function for every addition expression ever (infinite). By just using placeholdlers, you can then allow the user of the function to subsitute x and y for their own **arguments**. 
+
+Lets see how we can do that, but first let us explain arguments, parameters and *passing*. Parameters are placeholders for functions to use. They have a type. Arguments are the values that you put in place of the placeholders when you call the function. Passing is the action of replacing the placeholders/parameters with your arguments.
+
+Ok lets try writing a function and calling it with our own arguments: 
+``` c++
+//define the function
+int add(int x, int y) {
+	return x + y;
+}
+// call it with our own values
+
+add(2,8);
+// There, magic.
+```
+What happens when you call a function? The function is added onto the top of the stack as becomes the primary thing the processor is executing. When the function **returns** it gives control of the computer to the next object in the stack. Last on. First out.
+
+**Return**:
+Functions can, but don't have to, return values. A function is evaluated to return a single value. If it doesn't it returns null/void/nil. If it does return a value then the function in the expression will be evaluated as the return value.
+
+**First class functions**:
+Some languages have the ability to store functions as variables. This allows for callbacks and other fancy things.
+Javascript is a good example of this.
+``` javascript
+var append = function(list, value) {
+	return list += value 
+}
+```
+
+## Controlflow
+
+## If/else/elseif
+
+## Switch
+
+## For loops
+
+## Do while loops
+
+## Async
 
 ### If you got to the end...
 
