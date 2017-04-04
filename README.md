@@ -26,7 +26,14 @@ The stack is the part of the RAM responsible for thread execution. It manages th
 
 The heap is the part of the RAM that is available for dynamic allocation. The heap allows you to create variables without explicitly specifying them in code. Your program can use the heap to create variables on the fly.
 
+### Input
 
+Input is simply data that is given to the program. Input can take many forms such as:
+* Mouse coordinates
+* Key press
+* Data from a file
+
+### Output
 
 ### If you got to the end...
 
