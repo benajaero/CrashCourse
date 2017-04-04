@@ -270,19 +270,162 @@ arr += 6
 arr.length
 ```
 
-They are pretty basic
+They are pretty basic.
 
 ## Control flow
 
+Control flow is the control of you programs execution through conditional programming and iteration.
 
-## If/else/elseif
+### If/else/elseif
 
-## Switch
+The easiest way to execute code based on a set of conditions is using the If/else/elseif syntax. Lets begin. 
 
-## For loops
+We learnt about the conditional operators: ==, !=, || and && (if you saw what I did there you are the real mvp). Now we will learn to use them. First some basics. 
 
-## Do while loops
+```
+x = 1 == 1
+```
+This causes x to be true.
 
+```
+y = 2
+x == 1 == 1 && y != 2
+2 > 1 // evaluates to true
+```
+x is equal to true though the second condition is equal to false.
+
+Now we've understand how to use our special operators we can learn to use If conditioning.
+If we want our code to only run if 2 is greater than one we can do it this way.
+``` javascript
+if ( 2 > 1 == true) {
+	//run code here
+}
+//simpler more concise way of getting true
+
+if ( 2 > 1) {
+	//run code
+}
+```
+The if statement only runs the code within it, if its parameters evaluate to true.
+What if we want to run multiple if statements? We can do:
+``` javascript
+if (2 > 1) {
+	//run code 1
+}
+if (3 > 2) {
+	//run code 2
+}
+```
+But there is a problem. The computer will run both code #1 and #2.  To make the code to only run the second we can use a **else if** statement:
+``` javascript
+if (2 > 1) {
+	//run code 1
+}
+else if (3 > 2) {
+	//run code 2
+}
+```
+Better. What if we want to run code only if the first if condition failed? Then we can use the **else** statement.
+
+``` javascript
+if (2 > 1) {
+	//run code 1
+}
+else {
+	//run code 2
+}
+```
+
+### Switch
+If/elseif/else is great until you have to check ten different conditions. You could link else ifs together but that would tedious and error-prone. Luckily we have an easy way to do this.
+
+A switch statement works by defining a value to be tested, creating a series of conditions and the code to be run. 
+``` javascript
+//first define value to be tested with the switch keyword
+switch (1) {
+	//define conditions/cases to be tested. Computer will check to see if condition is equal to value
+	case 1:
+		console.log("1")
+	case 2:
+		console.log("2")
+	case 3:
+		console.log("3")
+	//define a default value if none of the cases match up. 
+	default: 
+		console.log("try again")
+}
+```
+This works and is much clearer than if/elseif/else. But the computer will test all conditions even if it finds one that matches. How can we make it so that the program stops testing once it finds one that works?
+
+Like this, with the **break** keyword:
+``` javascript
+//first define value to be tested with the switch keyword
+switch (1) {
+	//define conditions/cases to be tested. Computer will check to see if condition is equal to value
+	case 1:
+		console.log("1")
+		break
+	case 2:
+		console.log("2")
+		break
+	case 3:
+		console.log("3")
+		break
+	//define a default value if none of the cases match up. 
+	default: 
+		console.log("try again")
+		
+}
+```
+The break keyword tells the program to stop testing for conditions.
+
+### For loops
+
+Without for loops we have to do this:
+``` javascript
+x = 1
+x++ //2
+x++ //3
+x++ //4
+x++ //5
+x++ //6
+```
+Tedious, slow and error-prone. With for loops we can shorten it.
+``` javascript
+for (int x = 1; x <= 6; x++) {
+	console.log(x)
+}
+```
+Much more concise.
+
+You start a for loop witht the **for** keyword (in most C-based languages). You then add brackets like these **()**. You use the first statement (before the first semicolon ';') to initialize a variable to use. You don't have to do this. It is optional. You can add as many variables as you want.
+
+The second statement is for controlling when the loop ends. If the second statement evaluates to be true the for loop will continue, otherwise it will end. You also don't need this. But if you decide not to include it then you will have to use the break keyword to end the loop manually.
+
+The third statement is conventionally for incrementing or deincrementing the variable. It is also optional. You can do anything within that statement not just incrementation.
+
+You can also use the **continue** keyword to break the current loop and resume from the next loop. 
+### Do while loops
+
+While loops loop as long as their conditon is true. The are basically repeat while loops. It can do the same things as a for loop but you will have to implement your own initialization and incrementation. Here is the same for-loop as a while loop.
+``` javascript
+var x = 1
+while (x <= 6) {
+	console.log(x)
+	x++
+}
+```
+
+You can also get your while loop to always execute at least once with the **do/while** statement.
+```javascript
+var x = 1;
+do {
+	console.log(x)
+	x++
+}
+while(x <= 6)
+```
+Also very simple.
 ## Async
 
 ### If you got to the end...
