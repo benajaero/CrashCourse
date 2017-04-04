@@ -1,8 +1,12 @@
 # Programming Crash Course
 
-You can use the [editor on GitHub](https://github.com/Blaze349/CrashCourse/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is a programming crash course for my brother. If you like it, give it a star or fork me on [Github](https://github.com/Blaze349/CrashCourse/). 
+It covers:
+* Architecture
+* The root of everything
+* Coding concepts
+* Control flow
+* Asynchronous programming
 
 # Architecture
 
@@ -102,7 +106,7 @@ One line. 11 characters. Easy.
 
 # Coding concepts
 
-# Expressions
+### Expressions
 Expressions are the smallest piece of code that can be executed by a computer.
 They are pieces of code made up of variables, constants, literals and functions that evaluate into a single value.
 
@@ -272,7 +276,7 @@ arr.length
 
 They are pretty basic.
 
-## Control flow
+# Control flow
 
 Control flow is the control of you programs execution through conditional programming and iteration.
 
@@ -280,7 +284,7 @@ Control flow is the control of you programs execution through conditional progra
 
 The easiest way to execute code based on a set of conditions is using the If/else/elseif syntax. Lets begin. 
 
-We learnt about the conditional operators: ==, !=, || and && (if you saw what I did there you are the real mvp). Now we will learn to use them. First some basics. 
+We learnt about the conditional operators: ==, !=, U+01C0 U+01C0 and && (if you saw what I did there you are the real mvp). Now we will learn to use them. First some basics. 
 
 ```
 x = 1 == 1
