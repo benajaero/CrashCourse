@@ -450,7 +450,7 @@ doHomework()
 ```
 To get the pizza you have to wait for pizzaman to order your call, then make the pizza and then bring it to your house. You aren't doing anything during that time.
 
-##Async again - Hooray! 
+## Async, again - Hooray! 
 Async is the crazy idea that, rather than waiting for the pizza before doing your homework, you do your homework while waiting for the pizza. This saves time, increasing speed. 
 
 To be Async you have to have give your functions a completion handler. What that means is that you have to give your functions a function to call when they have finished their jobs. The call this function to let you know their done. 
