@@ -193,7 +193,7 @@ Char // Single character
 ```
 You can also make your own types. Some languages are *dynamically-typed* which means you don't have to define a time. The type is inferred from the variable's value.
 
-Variables are stored in two places. Variables declared within functions are stored with the funcion in the stack part of the RAM. The variables can only be accessed with their parent function. They are known as local variables.
+Variables are stored in two places. Variables declared within functions are stored with the function in the stack part of the RAM. The variables can only be accessed with their parent function. They are known as local variables.
 
 Variables can also be stored in the heap. All global variables(variables outside every function) are stored in the heap. You can use the heap to dynamically allocate a variable. Here is a simple program that repeatdly creates and allocate a new variable in C++. You use pointers for this.
 
@@ -207,6 +207,24 @@ for (int i = 1; i <= 10; i++) {
 ```
 This program prints the numbers from 1 to 10. 
 
+Variables have **scope**. This means they can only be accessed in certain conditions. The first scope is the global scope. If a variable is declared in the global scope it can be accessed from everywhere in the program. To declare a variable in global scope, declare it outside of a function. As below. 
+```c++
+int x;//global variable declare outside any functions.
+ int main() {
+ 	return 0;
+}
+```
+
+Variables can have local scope. This means that they can only be accessed within thier function. Look at this program:
+```c++
+int main() {
+	int x;
+	return 0;
+}
+```
+The variable x can only be accessed within the function main. It can not be accessed outside.
+
+```c++
 ### Functions
 
 There is a well-known rule in the programming world. 
